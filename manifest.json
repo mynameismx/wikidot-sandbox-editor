@@ -1,14 +1,14 @@
 {
     "name": "Wikidot - Sandbox Editor",
     "version": "1.0.1",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "description": "CHROME EXTENSION FOR DISPLAYING INPUT CANDIDATES ON YOUR SANDBOX-PAGE.",
     "author": "7happy7",
-    "permissions": ["storage", "*://*.scp-wiki.net/*", "*://*.wikidot.com/*"],
+    "permissions": ["storage", "*://*.castopia.ct.ws/*", "*://*.wikidot.com/*"],
     "web_accessible_resources": ["assets/main.js", "assets/*.json"],
     "content_scripts": [
         {
-            "matches": ["*://*.scp-wiki.net/*", "*://*.wikidot.com/*"],
+            "matches": ["*://*.castopia.ct.ws/*", "*://*.wikidot.com/*"],
             "js": ["assets/main.js"],
             "run_at": "document_start"
         }
