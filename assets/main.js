@@ -17,7 +17,7 @@ window.onload = function() {
     function getAssets(filename) {
         return new Promise(function(r) {
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', chrome.extension.getURL(filename), true);
+            xhr.open('GET', chrome.runtime.getURL(filename), true);
             xhr.onreadystatechange = function() {
                 if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
                     r(xhr.responseText);
