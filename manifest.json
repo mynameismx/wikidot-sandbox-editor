@@ -9,7 +9,7 @@
         {
             "resources": ["assets/main.js", "assets/*.json"]
         }
-    ]
+    ],
     "content_scripts": [
         {
             "matches": ["*://*.castopia.ct.ws/*", "*://*.wikidot.com/*"],
