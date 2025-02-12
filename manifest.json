@@ -5,7 +5,11 @@
     "description": "CHROME EXTENSION FOR DISPLAYING INPUT CANDIDATES ON YOUR SANDBOX-PAGE.",
     "author": "7happy7",
     "permissions": ["storage", "*://*.castopia.ct.ws/*", "*://*.wikidot.com/*"],
-    "web_accessible_resources": ["assets/main.js", "assets/*.json"],
+    "web_accessible_resources": [
+        {
+            "resources": ["assets/main.js", "assets/*.json"]
+        }
+    ]
     "content_scripts": [
         {
             "matches": ["*://*.castopia.ct.ws/*", "*://*.wikidot.com/*"],
