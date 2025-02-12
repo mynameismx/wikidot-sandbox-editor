@@ -4,16 +4,16 @@
     "manifest_version": 3,
     "description": "CHROME EXTENSION FOR DISPLAYING INPUT CANDIDATES ON YOUR SANDBOX-PAGE.",
     "author": "7happy7",
-    "permissions": ["storage", "*://*.castopia.ct.ws/*", "*://*.wikidot.com/*", "*://scpfoundation.net/*"],
+    "permissions": ["storage", "*://*.castopia.ct.ws/*", "*://*.wikidot.com/*", "*://scpfoundation.net/*", "*://backroomswiki.ru/*"],
     "web_accessible_resources": [
         {
             "resources": ["assets/main.js", "assets/*.json"],
-            "matches": ["*://*.castopia.ct.ws/*", "*://*.wikidot.com/*", "*://scpfoundation.net/*"]
+            "matches": ["*://*.castopia.ct.ws/*", "*://*.wikidot.com/*", "*://scpfoundation.net/*", "*://backroomswiki.ru/*"]
         }
     ],
     "content_scripts": [
         {
-            "matches": ["*://*.castopia.ct.ws/*", "*://*.wikidot.com/*", "*://scpfoundation.net/*"],
+            "matches": ["*://*.castopia.ct.ws/*", "*://*.wikidot.com/*", "*://scpfoundation.net/*", "*://backroomswiki.ru/*"],
             "js": ["assets/main.js"],
             "run_at": "document_start"
         }
