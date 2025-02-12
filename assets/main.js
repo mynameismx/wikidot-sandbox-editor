@@ -29,11 +29,10 @@ window.onload = function() {
     function detectTA(e) {
         if(e.target.id == "edit-page-textarea") {
             var s = document.createElement("style");
-            s.innerHTML = '.candyBox {background: #fff;box-shadow: 1px 1px 3px #aaa;font-family: courier;font-size: .8em;max-height: 6rem;max-width: 12rem;overflow-y: scroll;position: absolute;text-align: left;width: 99rem;}.candyBox a {cursor: pointer;display: block;padding: .35em .5em;transition: all .175s ease-in-out;}.candyBox a span {display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;white-space: pre;}.candyBox a.selected, .candyBox a:hover {background: #b01;color: #fff;}';
+            s.innerHTML = '.candyBox {background: rgba(var(--background-color));font-family: Inter, "Noto Sans SC", "Noto Sans TC", Arimo, Verdana, Geneva, sans-serif;font-size: .8em;max-height: 10rem;max-width: 12rem;overflow-y: scroll;position: absolute;text-align: left;width: 99rem;}.candyBox a {cursor: pointer;display: block;color: rgba(var(--text-color));padding: .35em .5em;transition: all .175s ease-in-out;}.candyBox a span {display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;white-space: pre;}.candyBox a.selected, .candyBox a:hover {background: rgba(var(--text-color));color: rgba(var(--background-color));text-decoration: none;}';
             document.head.appendChild(s);
             var p = e.target.parentNode;
             p.style.position = "relative";
-            e.target.style.outline = "solid 2px #b01";
             var _e = e;
             
             e.target.onkeyup = function(e) {
@@ -170,7 +169,7 @@ window.onload = function() {
         };
         div.remove();
 
-        box.style.top = 'calc(' + (r.top - t.scrollTop * (scale_y ? Number(scale_y) : 1)) + 'px + 1rem)';
+        box.style.top = 'calc(' + (r.top - t.scrollTop * (scale_y ? Number(scale_y) : 1)) + 'px + 2rem)';
         box.style.left = (r.left - t.scrollLeft * (scale_x ? Number(scale_x) : 1)) + 'px';
         p.appendChild(box);
         var width = 0;
