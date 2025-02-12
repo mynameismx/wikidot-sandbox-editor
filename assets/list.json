@@ -1,70 +1,70 @@
 {
     "list": {
-        "!format": {
+        "`format": {
             "display": "[[...format]]",
             "value": ["[[>]]\n[[module Rate]]\n[[/>]]\n\n**Item #:** SCP-XXXX\n\n**Object Class:** Euclid\n\n**Special Containment Procedures:** text\n\n**Description:** ", ""]
         },
-        "!include": {
+        "`include": {
             "display": "[[include]]",
             "value": ["[[include ", "]]"]
         },
-        "!div": {
+        "`div": {
             "display": "[[div]]",
             "value": ["[[div class=\"\"\n", "\n[[/div]]"]
         },
-        "!collapsible": {
+        "`collapsible": {
             "display": "[[collapsible]]",
             "value": ["[[collapsible show=\"+ Открыть\" hide=\"- Скрыть\"]]\n", "\n[[/collapsible]]"]
         },
-        "!colmod": {
+        "`colmod": {
             "display": "[[...colmod]]",
             "value": ["[[include :scp-int:component:coltop show=+open|hide=-close]]\n", "\n[[include :scp-int:component:colend]]"]
         },
-        "!size": {
+        "`size": {
             "display": "[[size]]",
             "value": ["[[size 120%]]", "[[/size]]"]
         },
-        "!footnote": {
+        "`footnote": {
             "display": "[[footnote]]",
             "value": ["[[footnote]]", "[[/footnote]]"]
         },
-        "!ruby": {
+        "`ruby": {
             "display": "[[...ruby]]",
             "value": ["[[span class=\"ruby\"]]", "[[span class=\"rt\"]]ruby[[/span]][[/span]]"]
         },
-        "!image": {
+        "`image": {
             "display": "[[...image]]",
             "value": ["[[include component:image-block\n|name=<ваш файл>\n|caption=", "\n]]"]
         },
-        "!color": {
+        "`color": {
             "display": "##color##",
             "value": ["###b01|", "##"]
         },
-        "!box": {
+        "`box": {
             "display": "blackbox(█)",
             "value": ["██", ""]
         },
-        "!css": {
+        "`css": {
             "display": "[[...CSS]]",
             "value": ["[[module CSS]]\n", "\n[[/module]]"]
         },
-        "!note": {
+        "`note": {
             "display": "[[note]]",
             "value": ["[[note]]\n", "\n[[/note]]"]
         },
-        "!tabview": {
+        "`tabview": {
             "display": "[[tabview]]",
             "value": ["[[tabview]]\n[[tab Вкладка]]\n", "\n[[/tab]]\n[[/tabview]]"]
         },
-        "!iframe": {
+        "`iframe": {
             "display": "[[iframe]]",
             "value": ["[[iframe ", " style=\"border: none; width: 100%;\"]]"]
         },
-        "!listPages": {
+        "`listPages": {
             "display": "[[...listPages]]",
             "value": ["[[include :topia:listusers-1 users=\".\"]]\n##red|%%name%%##\ntext for wikidot user\n[[include :topia:listusers-2]]\n##blue|guest##\ntext for non-wikidot user\n[[include :topia:listusers-3]]", ""]
         },
-        "!footer": {
+        "`footer": {
             "display": "[[...footer-wikiwalk-nav]]",
             "value": ["[[div class=\"footer-wikiwalk-nav\"]]\n= << [[[SCP-XXXX]]] | SCP-XXXX | [[[SCP-XXXX]]] >>\n[[/div]]", ""]
         }
