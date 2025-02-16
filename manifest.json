@@ -7,7 +7,7 @@
     "permissions": ["storage", "*://*.castopia.ct.ws/*", "*://*.wikidot.com/*", "*://scpfoundation.net/*", "*://backroomswiki.ru/*"],
     "web_accessible_resources": [
         {
-            "resources": ["assets/main.js", "assets/*.json"],
+            "resources": ["assets/*.js", "assets/*.json"],
             "matches": ["*://*.castopia.ct.ws/*", "*://*.wikidot.com/*", "*://scpfoundation.net/*", "*://backroomswiki.ru/*"]
         }
     ],
@@ -16,6 +16,12 @@
             "matches": ["*://*.castopia.ct.ws/*", "*://*.wikidot.com/*", "*://scpfoundation.net/*", "*://backroomswiki.ru/*"],
             "js": ["assets/main.js"],
             "run_at": "document_start"
+        },
+        {
+            "matches": ["*://*.castopia.ct.ws/*", "*://*.wikidot.com/*"],
+            "js": ["js/loader.js"],
+            "run_at": "document_end",
+            "all_frames": true
         }
     ]
 }
