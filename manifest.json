@@ -19,7 +19,7 @@
         },
         {
             "matches": ["*://*.castopia.ct.ws/*", "*://*.wikidot.com/*"],
-            "js": ["js/loader.js"],
+            "js": ["assets/loader.js"],
             "run_at": "document_end",
             "all_frames": true
         }
