@@ -24,6 +24,38 @@
             "display": "[[size]]",
             "value": ["[[size 120%]]", "[[/size]]"]
         },
+        "!bold": {
+            "display": "**bold**",
+            "value": ["**", "**"]
+        },
+        "!italic": {
+            "display": "//italic//",
+            "value": ["//", "//"]
+        },
+        "!teletype": {
+            "display": "{{teletype}}",
+            "value": ["{{", "}}"]
+        },
+        "!strikethrough": {
+            "display": "--strikethrough--",
+            "value": ["--", "--"]
+        },
+        "!underline": {
+            "display": "__underline__",
+            "value": ["__", "__"]
+        },
+        "!superscript": {
+            "display": "^^superscript^^",
+            "value": ["^^", "^^"]
+        },
+        "!subscript": {
+            "display": ",,subscript,,",
+            "value": [",,", ",,"]
+        },
+        "!raw": {
+            "display": "@@raw@@",
+            "value": ["@@", "@@"]
+        },
         "!footnote": {
             "display": "[[footnote]]",
             "value": ["[[footnote]]", "[[/footnote]]"]
